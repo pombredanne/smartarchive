@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 4.2.4
+deploy:
+  provider: npm
+  email: npm@lossless.digital
+  api_key:
+    secure: JNfCkELIH8XfYpK6KMwT3p8lT6LWWzpFwTdD1CY6KYKYBL5F3JtaNrVA/5qtXR3QtxQ71pMDuMMTpAUWkcK4/faZn/ZIavsi5b1bXGSwqSez6p70d5Ob4prxvFnjAGUZ0zbfIxhmpMCfFiYLoAYyNAcnlqqKaNI+ARrTFApVuihrpaJj6DyChVY5VbzqIoErDiMYO+BxqPvqzfqabtanCJo2LVgCdZ2RuNMSEUqkn/J9fJoy6+MpgMrNIm/S6e+sCt9VVqVqfxy89SYBc2rmTVaaMlhy6AMbRPVhLqLBn/u4303/5MZlPsAWcyL03GNv3UC1WPaNbA/FNcK3Hxp++p+2hTu/BPes7WWD6/GLilbjt12dRaRlSojlU8BpNd/IzSEnnwFvl68XFoOjaF97lHqoh4W9eeF5Yjd1IcKk2A5ZMS8G/MTblPHDU5AoEKAjTZgf9ntC9iWfEEZYbVuwHcHUONkGfYuTe/nCxRaiCbnUyyEG3I5Gf2+bUyEQSl69pnlhCEDPmD0c+KOz9UPlW833iJ3dQboTcF3TF05nW/YFtLFF5IVgXss+QsBAtuDVj4OJ56b4WJyrFCjr5GgGPI4GjCpDVt8MU1yWRpRycJssKtxAdH5o4WdVPLqIIhf1NJP9xemTaXIQ6EzymxzXKyh9ynp58k+ojUUYb722i7Q=
+  on:
+    tags: true
+    repo: pushrocks/remotezip

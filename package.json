@@ -1,0 +1,25 @@
+{
+  "name": "remotezip",
+  "version": "0.0.0",
+  "description": "work with remote zip files",
+  "main": "index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushrocks/remotezip.git"
+  },
+  "author": "Lossless Digital UG (haftungsbeschraenkt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pushrocks/remotezip/issues"
+  },
+  "homepage": "https://github.com/pushrocks/remotezip#readme",
+  "dependencies": {
+    "remotefile": "0.0.13"
+  },
+  "devDependencies": {
+    "npmts": "1.0.9"
+  }
+}
