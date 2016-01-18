@@ -4,7 +4,8 @@
   "description": "work with remote zip files",
   "main": "index.js",
   "scripts": {
-    "test": "(npmts)"
+    "test": "(npmts)",
+    "testm": "(npm test) && (node test.js)"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/pushrocks/remotezip#readme",
   "dependencies": {
-    "remotefile": "0.0.13"
+    "beautylog": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-remote-src": "^0.4.0",
+    "gulp-unzip": "^0.1.3",
+    "remotefile": "0.0.14"
   },
   "devDependencies": {
     "npmts": "1.0.9"
