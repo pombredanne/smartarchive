@@ -5,7 +5,8 @@ downloads and extracts remote zip files
 var remotezip = require("remotezip");
 remotezip.get({
     from:"https://example.com/example.zip",
-    toPath:"/some/local/absolute/path"
+    toPath:"/some/local/absolute/path",
+    cb: someCallback //optional
 });
 ```
 
