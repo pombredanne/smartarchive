@@ -19,7 +19,9 @@ declare var plugins: {
     };
     path: any;
 };
-declare var remotezip: (options: {
-    from: string;
-    toPath: string;
-}) => void;
+declare var remotezip: {
+    get: (options: {
+        from: string;
+        toPath: string;
+    }) => void;
+};
