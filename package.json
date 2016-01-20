@@ -1,6 +1,6 @@
 {
   "name": "remotezip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "work with remote zip files",
   "main": "index.js",
   "scripts": {
