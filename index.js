@@ -26,7 +26,7 @@ var remotezip = {
             return;
         }
         ;
-        plugins.gulp.task('default', function () {
+        plugins.gulp.task("remotezip", function () {
             plugins.beautylog.log('Now trying to download and extract...');
             var stream = plugins.g.remoteSrc(["master.zip"], {
                 base: "https://github.com/UmbrellaZone/legaldocs/archive/"
@@ -34,6 +34,13 @@ var remotezip = {
                 .pipe(plugins.g.unzip())
                 .pipe(plugins.gulp.dest(options.toPath));
             return stream;
+        });
+        plugins.gulp.task("default", ["remotezip"], function () {
+            plugins.beautylog.success("Download complete and archive extracted");
+            if (typeof options.cb == "function") {
+                options.cb();
+            }
+            ;
         });
         plugins.gulp.start.apply(plugins.gulp, ['default']);
     }

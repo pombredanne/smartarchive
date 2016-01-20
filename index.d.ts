@@ -23,5 +23,6 @@ declare var remotezip: {
     get: (options: {
         from: string;
         toPath: string;
+        cb?: any;
     }) => void;
 };
