@@ -2,4 +2,6 @@
 ts/*.js
 ts/*.js.map
 node_modules
-test/
+docs/
+coverage/
+
